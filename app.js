@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.send('Servidor funcionando');
 });
 
-app.listen(PORT, function() {
+app.listen(PORT,() => {
     console.log(`escuchando en el puerto ${PORT}`);
 
 });
